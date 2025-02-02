@@ -73,6 +73,12 @@ select,
 textarea {
     width: 100%;
     appearance: none;
+    outline: none;
+}
+
+.header {
+    padding-bottom: 45px;
+    position: relative;
 }
 
 h1 {
@@ -146,23 +152,38 @@ h1 {
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+    border: none;
+}
+
+.formfirst > label > input[type=submit]:focus {
+    box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
+    background-color: #07be51;
+    border-radius: 3px;
+    outline: none;
 }
 
 .sixthcolon {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    position: absolute;
+    top: 176px;
+    right: 0;
     width: 310px;
 }
 
-.formlast {
+.sixthcolon > div {
+    position: fixed;
+    background-color: #fafafa;
     border-radius: 5px;
     box-shadow: 0px 5px 6px 6px rgba(0,0,0,0.15);
-    background-color: #fafafa;
     border: 1px solid #e6e6e6;
 }
 
-.formlast > p:first-child {
+.formlast {
+    padding: 5px 25px;
+}
+
+.formlast ~ p > a{
+    display: block;
+    position: absolute;
     width: 12px;
     height: 12px;
     color: #b3b3b3;
@@ -170,9 +191,174 @@ h1 {
     padding: 10px;
 }
 
+.formlast ~ p {
+    position: relative;
+}
+
 .formlast > p > a {
     font-size: 13px;
     color: #3e6aff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-decoration: none;  
+}
+
+.formlast > p:first-child,
+.formlast > p:nth-child(2) {
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.formlast > p:first-child > label > input,
+.formlast > p:nth-child(2) > label > input{
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.formlast > p:nth-child(4) > label {
+    font-size: 13px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.parent {
+    position: relative;
+}
+
+.parent span {
+    position: absolute;
+}
+
+.parent > input:checked {
+    outline: 1px solid #3e6aff;
+}
+
+.parent > input:checked + span {
+    top: 20%;
+    left: 44%;
+    width: 5px;
+    height: 7px;
+    border-top: 2px solid #244dd7;
+    border-left: 2px solid #244dd7;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.formlast > p:nth-child(4) > label > span > input {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #fff;
+    outline: 1px solid #ccc;
+}
+
+.formlast > p > label > input[type=submit] {
+    border-radius: 3px;
+    background-color: #12d661;
+    border: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    padding: 16px 0;
+}
+
+.formlast input[type=submit]:checked {
+    outline: none;
+    box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
+    background-color: #07be51;
+}
+
+hr:first-child {
+    border: none;
+    border-top: 1px solid #dcdcde;
+}
+
+.main {
+    padding-top: 50px;
+}
+
+.secondform > h2 {
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.secondform > form {
+    display: flex;
+    column-gap: 62px;
+}
+
+.radio > p:first-child > label > input,
+.radio > p:nth-child(2) > label > input {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    outline: 1px solid #cccccc;
+}
+
+.radio > p:first-child > label > input:checked,
+.radio > p:nth-child(2) > label > input:checked {
+    border: 3px solid #fff;
+    background-color: #3e6aff;
+    outline: 1px solid #3e6aff;
+}
+
+.radio > p:last-child > label > input {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    background-color: #f7f7f7;
+    outline: 1px solid #e5e5e5;
+}
+
+.radio > p:last-child > label {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.parentx {
+    position: relative;
+}
+
+.parentx span {
+    position: absolute;
+}
+
+.parentx > input:checked {
+    outline: 1px solid #3e6aff;
+}
+
+.parentx > input:checked + span {
+    top: 20%;
+    left: 44%;
+    width: 5px;
+    height: 7px;
+    border-top: 2px solid #244dd7;
+    border-left: 2px solid #244dd7;
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.checkbox > p:last-child > label > span > input {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
+.checkbox > p:last-child > label {
+    font-size: 14px;
+    color: #b3b3b3;
     font-weight: 400;
     font-family: "Roboto";
 }

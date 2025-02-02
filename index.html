@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper header">
+        <h1>Форми</h1>
+        <div class="first-colon">
+            <p>01. проста форма</p>
+            <form method="post" action="php/formfirst.php" class="formfirst">
+                <p>
+                    <label>
+                        <input type="text" name="userName" placeholder="Введіть ім’я">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="email" name="userEmail" placeholder="Email">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <select name="select" id="">
+                            <option value="Yourcity">Ваше місто</option>
+                            <option value="Kyiv">Київ</option>
+                            <option value="Lviv">Львів</option>
+                            <option value="Khmelnitskiy">Хмельницький</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <textarea name="emailtextarea" id="" placeholder="Email" required></textarea>
+                    </label>
+                </p>
+                <label>
+                    <input type="submit" placeholder="Зареєструватися" value="Зареєструватися">
+                </label>
+            </form>
+        </div>
+        <div class="sixthcolon">
+            <p>06. фіксована форма</p>
+            <div>
+                <p>
+                    <a href="#">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="10"
+                            height="10">
+                            <style>
+                                .a {
+                                    fill: #b3b3b3
+                                }
+                            </style>
+                            <path fill-rule="evenodd" class="a"
+                                d="m9.9 8.5l-1.4 1.4-3.5-3.5-3.5 3.5-1.4-1.4 3.5-3.5-3.5-3.5 1.4-1.4 3.5 3.5 3.5-3.5 1.4 1.4-3.5 3.5z" />
+                        </svg>
+                    </a>
+                </p>
+                <form method="post" class="formlast">
+                    <p>
+                        Логін
+                        <label>
+                            <input type="text">
+                        </label>
+                    </p>
+                    <p>
+                        Пароль
+                        <label>
+                            <input type="password">
+                        </label>
+                    </p>
+                    <p>
+                        <a href="#">Забули пароль?</a>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="parent">
+                                <input type="checkbox">
+                                <span></span>
+                            </span>
+                            Запам’ятати пароль
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="submit" value="Увійти">
+                        </label>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr class="wrapper">
+    <div class="wrapper main">
+        <div class="secondform">
+            <h2>02. елементи</h2>
+            <form action="secondform.php" method="post">
+                <div class="radio">
+                    <p>
+                        <label>
+                            <input type="radio" name="poshta" value="0">
+                            Нова Пошта
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="poshta" value="1">
+                            Кур’єр
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="poshta" value="2" disabled>
+                            Самовивіз
+                        </label>
+                    </p>
+                </div>
+                <div class="checkbox">
+                    <p>
+                        <label>
+                            <span class="parent">
+                                <input type="checkbox">
+                                <span></span>
+                            </span>
+                            Прочитав умови договору
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="parent">
+                                <input type="checkbox">
+                                <span></span>
+                            </span>
+                            Згідний з ПДВ 9%
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="parentx">
+                                <input type="checkbox" disabled>
+                                <span></span>
+                            </span>
+                            Отримувати новини на ел. пошту
+                        </label>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
