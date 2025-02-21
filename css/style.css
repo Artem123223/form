@@ -595,6 +595,7 @@ input[type="date"] {
   height: 22px;
   background-color: #fff;
   border-radius: 50%;
+  cursor: pointer;
   transform: translateY(-50%);
   transition: left 0.3s;
 }
@@ -631,6 +632,11 @@ input[type="date"] {
   row-gap: 19px;
 }
 
+.fourthform,
+.fourthform > table {
+  width: 500px;
+}
+
 .fourthcolon > h2 {
   font-size: 20px;
   letter-spacing: 0px;
@@ -647,4 +653,115 @@ input[type="date"] {
   font-weight: 700;
   font-family: "Roboto";
   padding-bottom: 25px;
+}
+
+.td-text {
+  font-size: 14px;
+  color: #1f222c;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.table-input {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding: 15px 0 13px 15px;
+  width: 324px;
+}
+
+.table-input:focus,
+.table-select:focus {
+  box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
+  border: 1px solid #3e6aff;
+  appearance: none;
+}
+
+.table-select {
+  font-size: 14px;
+  color: #1f222c;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding: 15px 0 13px 15px;
+  width: 341px;
+}
+
+.flexradiotd {
+  display: flex;
+  column-gap: 23px;
+}
+
+.flex-radio {
+  display: flex;
+  column-gap: 9px;
+}
+
+.file-input {
+  border-radius: 3px;
+  background-color: #3e6aff;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.table-textarea {
+  padding: 15px 0 13px 15px;
+  width: 324px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-family: "Roboto";
+  min-height: 130px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.tbody-flex > tr:first-child,
+.tbody-flex > tr:last-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.tbody-flex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+}
+
+.submit-form {
+  border-radius: 3px;
+  background-color: #12d661;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+  padding: 17px 0;
+  width: 340px;
+}
+
+.fifth-colon > h2 {
+  font-size: 20px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.fifth-colon > p {
+  font-size: 18px;
+  color: #1f222c;
+  font-weight: 700;
+  font-family: "Roboto";
 }

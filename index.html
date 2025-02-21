@@ -35,12 +35,7 @@
           </p>
           <p>
             <label>
-              <textarea
-                name="emailtextarea"
-                id=""
-                placeholder="Email"
-                required
-              ></textarea>
+              <textarea name="emailtextarea" id="" placeholder="Email" required></textarea>
             </label>
           </p>
           <label>
@@ -251,55 +246,73 @@
           </div>
         </form>
       </div>
-      <hr class="wrapper secondhr" />
+      <hr class="wrapper secondhr">
       <div class="fourthcolon">
         <h2>04. форма таблицею</h2>
         <p class="tableup-p">Заповніть усі необхідні поля</p>
-        <form action="php/fourth.php" method="post">
+        <form action="php/fourth.php" method="post" class="fourthform">
           <table>
-            <tbody>
+            <tbody class="tbody-flex">
               <tr>
-                <td>ФІО:</td>
-                <td><input type="text" placeholder="Введіть ім’я" required></td>
+                <tr>
+                  <td class="td-text">ФІО:</td>
+                  <td><input type="text" placeholder="Введіть ім’я" class="table-input" required></td>
+                </tr>
+                <tr>
+                  <td class="td-text">Пароль:</td>
+                  <td><input type="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
+                </tr>
+                <tr>
+                  <td class="td-text">Місто:</td>
+                  <td>
+                    <label class="arrow">
+                      <select name="select" class="table-select">
+                        <option value="Khmelnitskiy">Хмельницький</option>
+                        <option value="Kyiv">Київ</option>
+                        <option value="Lviv">Львів</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
               </tr>
-              <tr>
-                <td>Пароль:</td>
-                <td><input type="password" placeholder="Введіть не менше 6 символів" maxlength="6" required></td>
-              </tr>
-              <tr>
-                <td>Місто:</td>
-                <td>
-                  <select name="select">
-                    <option value="Khmelnitskiy">Хмельницький</option>
-                    <option value="Kyiv">Київ</option>
-                    <option value="Lviv">Львів</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td>Стать:</td>
-                <td>
-                  <label class="radio-table">
+              <tr class="flex">
+                <td class="td-text">Стать:</td>
+                <td class="flexradiotd">
+                  <label class="radio-table flex-radio">
                     <input type="radio" name="floors" value="0">
                     Чоловік
                   </label>
-                  <label class="radio-table">
+                  <label class="radio-table flex-radio">
                     <input type="radio" name="floors" value="1">
                     Жінка
                   </label>
                 </td>
               </tr>
               <tr>
-                <td>Фото:</td>
-                <td><input type="file"></td>
-              </tr>
-              <tr>
-                <td>Коментарій:</td>
-                <td></td>
+                <tr>
+                  <td class="td-text">Фото:</td>
+                  <td><input type="file" class="file-input" placeholder="Виберіть файл"></td>
+                </tr>
+                <tr class="flex">
+                  <td class="td-text">Коментарій:</td>
+                  <td><textarea placeholder="Введіть текст повідомлення" class="table-textarea"></textarea></td>
+                </tr>
               </tr>
             </tbody>
           </table>
-          <label><input type="submit"></label>
+          <label><input type="submit" value="Зареєструватися" class="submit-form"></label>
+        </form>
+      </div>
+      <hr class="wrapper secondhr">
+      <div class="fifth-colon">
+        <h2>05. форма таблицею</h2>
+        <p>Оформлення заявки</p>
+        <form action="php/fifth.php" method="post">
+          <table>
+            <tbody>
+              
+            </tbody>
+          </table>
         </form>
       </div>
     </div>
