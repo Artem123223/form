@@ -771,6 +771,7 @@ input[type="date"] {
   color: #b3b3b3;
   font-weight: 700;
   font-family: "Roboto";
+  padding-bottom: 33px;
 }
 
 .fifth-colon > p {
@@ -778,6 +779,7 @@ input[type="date"] {
   color: #1f222c;
   font-weight: 700;
   font-family: "Roboto";
+  padding-bottom: 22px;
 }
 
 .hr-table {
@@ -804,6 +806,7 @@ input[type="date"] {
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  padding: 17px 0 12px 17px;
+  padding: 17px 12px 17px;
   width: 100%;
+  box-sizing: border-box;
 }
