@@ -252,32 +252,30 @@
         <p class="tableup-p">Заповніть усі необхідні поля</p>
         <form action="php/fourth.php" method="post" class="fourthform">
           <table>
-            <tbody class="tbody-flex">
+            <tbody>
               <tr>
-                <tr>
-                  <td class="td-text">ФІО:</td>
-                  <td><input type="text" placeholder="Введіть ім’я" class="table-input" required></td>
-                </tr>
-                <tr>
-                  <td class="td-text">Пароль:</td>
-                  <td><input type="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
-                </tr>
-                <tr>
-                  <td class="td-text">Місто:</td>
-                  <td>
-                    <label class="arrow">
-                      <select name="select" class="table-select">
-                        <option value="Khmelnitskiy">Хмельницький</option>
-                        <option value="Kyiv">Київ</option>
-                        <option value="Lviv">Львів</option>
-                      </select>
-                    </label>
-                  </td>
-                </tr>
+                <td class="td-text">ФІО:</td>
+                <td class="padding-table"><input type="text" placeholder="Введіть ім’я" class="table-input" required></td>
               </tr>
-              <tr class="flex">
+              <tr>
+                <td class="td-text">Пароль:</td>
+                <td class="padding-table"><input type="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
+              </tr>
+              <tr>
+                <td class="td-text">Місто:</td>
+                <td class="padding-table-big">
+                  <label class="arrow">
+                    <select name="select" class="table-select">
+                      <option value="Khmelnitskiy">Хмельницький</option>
+                      <option value="Kyiv">Київ</option>
+                      <option value="Lviv">Львів</option>
+                    </select>
+                  </label>
+                </td>
+              </tr>
+              <tr>
                 <td class="td-text">Стать:</td>
-                <td class="flexradiotd">
+                <td class="flexradiotd padding-table-big">
                   <label class="radio-table flex-radio">
                     <input type="radio" name="floors" value="0">
                     Чоловік
@@ -288,18 +286,16 @@
                   </label>
                 </td>
               </tr>
-              <tr>
                 <tr>
                   <td class="td-text">Фото:</td>
-                  <td><button type="file" class="file-input">Виберіть файл</button></td>
+                  <td class="padding-table"><button type="file" class="file-input">Виберіть файл</button></td>
                 </tr>
                 <tr>
                   <td class="td-text">Коментарій:</td>
-                  <td><textarea placeholder="Введіть текст повідомлення" class="table-textarea"></textarea></td>
+                  <td class="padding-table"><textarea placeholder="Введіть текст повідомлення" class="table-textarea"></textarea></td>
                 </tr>
-              </tr>
               <tr>
-                <td rowspan="2">
+                <td>
                   <input type="submit" value="Зареєструватися" class="submit-form">
                 </td>
               </tr>

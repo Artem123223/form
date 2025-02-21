@@ -681,23 +681,22 @@ input[type="date"] {
   appearance: none;
 }
 
+.padding-table {
+  padding-bottom: 14px;
+}
+
+.padding-table-big {
+  padding-bottom: 19px;
+}
+
 .table-select {
   font-size: 14px;
   color: #1f222c;
   font-weight: 400;
   font-family: "Roboto";
+  background-color: transparent;
   padding: 15px 0 13px 15px;
   width: 341px;
-}
-
-.flexradiotd {
-  display: flex;
-  column-gap: 23px;
-}
-
-.flex-radio {
-  display: flex;
-  column-gap: 9px;
 }
 
 .file-input {
@@ -726,18 +725,6 @@ input[type="date"] {
   resize: vertical;
 }
 
-.tbody-flex > tr:first-child {
-  display: flex;
-  flex-direction: column;
-  row-gap: 14px;
-}
-
-.tbody-flex {
-  display: flex;
-  flex-direction: column;
-  row-gap: 19px;
-}
-
 .submit-form {
   border-radius: 3px;
   background-color: #12d661;
@@ -747,7 +734,6 @@ input[type="date"] {
   font-family: "Roboto";
   border: none;
   padding: 17px 0;
-  width: 340px;
 }
 
 .fifth-colon > h2 {
