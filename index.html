@@ -310,7 +310,26 @@
         <form action="php/fifth.php" method="post">
           <table>
             <tbody>
-              
+              <tr>
+                <td>Прізвище та ім’я</td>
+                <td>Ел. пошта</td>
+                <td>Телефон</td>
+              </tr>
+              <tr>
+                <td><label><input type="text"></label></td>
+                <td><label><input type="email"></label></td>
+                <td><label><input type="tel"></label></td>
+              </tr>
+              <tr>
+                <td>Країна</td>
+                <td rowspan="2">Адреса</td>
+              </tr>
+              <tr>
+                <td><select name="select" id="">
+                  <option value="indonezia">Індонезія</option>
+                </select></td>
+                <td rowspan="2"></td>
+              </tr>
             </tbody>
           </table>
         </form>
