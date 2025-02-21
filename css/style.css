@@ -713,6 +713,8 @@ input[type="date"] {
   font-weight: 400;
   font-family: "Roboto";
   background-color: transparent;
+  outline: 1px solid #ccc; 
+  border-radius: 3px;
   padding: 15px 0 13px 15px;
   width: 341px;
 }
@@ -786,6 +788,14 @@ input[type="date"] {
   width: 100%;
   border: none;
   border-top: 1px solid #e9e9e9;
+  margin: 30px 0 30px 0;
+}
+
+.hr-tablez {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e9e9e9;
+  margin: 24px 0 30px 0;
 }
 
 .label-table {
@@ -809,4 +819,43 @@ input[type="date"] {
   padding: 17px 12px 17px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.select-label {
+  max-width: 220px;
+}
+
+.table-padding {
+  padding-bottom: 18px;
+}
+
+.reset {
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #85868d;
+  font-size: 14px;
+  color: #6e6f77;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding: 16px 25px 13px 26px;
+  transition: all .5s ease;
+}
+
+.reset:hover {
+  background-color: #85868d;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.submit-fifth {
+  border-radius: 3px;
+  background-color: #12d661;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto";
+  border: none;
+  padding: 16px 26px 13px 27px;
 }
