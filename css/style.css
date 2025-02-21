@@ -543,7 +543,6 @@ input[type="date"] {
   background-image: url("../img/man.svg");
   border-radius: 50%;
   z-index: 2;
-  transition: all .5s ease;
 }
 
 .firstradiofloor:checked {
@@ -557,7 +556,6 @@ input[type="date"] {
   background-image: url("../img/woman.svg");
   border-radius: 50%;
   z-index: 1;
-  transition: all .5s ease;
 }
 
 .secondradiofloor:checked {
@@ -656,6 +654,8 @@ input[type="date"] {
 }
 
 .td-text {
+  width: 72px;
+  vertical-align: top;
   font-size: 14px;
   color: #1f222c;
   font-weight: 400;
@@ -707,7 +707,8 @@ input[type="date"] {
   color: #fff;
   font-weight: 700;
   font-family: "Roboto";
-  text-align: center;
+  border: none;
+  padding: 16px 37px 12px 37px;
 }
 
 .table-textarea {
@@ -725,8 +726,7 @@ input[type="date"] {
   resize: vertical;
 }
 
-.tbody-flex > tr:first-child,
-.tbody-flex > tr:last-child {
+.tbody-flex > tr:first-child {
   display: flex;
   flex-direction: column;
   row-gap: 14px;
@@ -745,7 +745,7 @@ input[type="date"] {
   color: #ffffff;
   font-weight: 700;
   font-family: "Roboto";
-  text-align: center;
+  border: none;
   padding: 17px 0;
   width: 340px;
 }
