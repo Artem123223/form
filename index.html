@@ -39,11 +39,7 @@
             </label>
           </p>
           <label>
-            <input
-              type="submit"
-              placeholder="Зареєструватися"
-              value="Зареєструватися"
-            />
+            <input type="submit" value="Зареєструватися">
           </label>
         </form>
       </div>
@@ -137,7 +133,7 @@
               <p>
                 <label class="style-checkbox">
                   <span class="parentx">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="agree" required>
                     <span></span>
                   </span>
                   Прочитав умови договору
@@ -146,7 +142,7 @@
               <p>
                 <label class="style-checkbox">
                   <span class="parentx">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="agree" required>
                     <span></span>
                   </span>
                   Згідний з ПДВ 9%
@@ -167,21 +163,21 @@
                 <p class="status">Статус</p>
                 <label class="flex-">
                   <span class="parentc">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="tick" required>
                     <span></span>
                   </span>
                   Новинки
                 </label>
                 <label class="flex-">
                   <span class="parentc">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="tick" required>
                     <span></span>
                   </span>
                   Акційні товари
                 </label>
                 <label class="flex-">
                   <span class="parentc">
-                    <input type="checkbox" required>
+                    <input type="checkbox" name="tick" required>
                     <span></span>
                   </span>
                   Розпродаж
@@ -190,7 +186,7 @@
               <div class="antistyle-status">
                 <p class="status">Дата</p>
                 <label>
-                  <input type="date" />
+                  <input type="date" name="date">
                 </label>
               </div>
             </div>
@@ -204,13 +200,13 @@
           <div class="human">
             <p>
               <label class="flex_">
-                <input type="radio" name="floor" class="firstradiofloor" required>
+                <input type="radio" name="floor" value="1" class="firstradiofloor" required>
                 Чоловік
               </label>
             </p>
             <p>
               <label class="flex_">
-                <input type="radio" name="floor" class="secondradiofloor" required>
+                <input type="radio" name="floor" value="2" class="secondradiofloor" required>
                 Жінка
               </label>
             </p>
@@ -219,7 +215,7 @@
             <div class="checkbox">
               <label class="flex">
                 <span class="parenta">
-                  <input type="checkbox" required>
+                  <input type="checkbox" name="tick" required>
                   <span></span>
                 </span>
                 Отримувати новини
@@ -228,7 +224,7 @@
             <div class="checkbox">
               <label class="flex">
                 <span class="parenta">
-                  <input type="checkbox" required>
+                  <input type="checkbox" name="tick" required>
                   <span></span>
                 </span>
                 Купити додому ковбаси
@@ -237,7 +233,7 @@
             <div class="checkbox">
               <label class="flex">
                 <span class="parenta">
-                  <input type="checkbox" required>
+                  <input type="checkbox" name="tick" required>
                   <span></span>
                 </span>
                 Включити світло
@@ -255,11 +251,11 @@
             <tbody>
               <tr>
                 <td class="td-text">ФІО:</td>
-                <td class="padding-table"><input type="text" placeholder="Введіть ім’я" class="table-input" required></td>
+                <td class="padding-table"><input type="text" name="username" placeholder="Введіть ім’я" class="table-input" required></td>
               </tr>
               <tr>
                 <td class="td-text">Пароль:</td>
-                <td class="padding-table"><input type="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
+                <td class="padding-table"><input type="password" name="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
               </tr>
               <tr>
                 <td class="td-text">Місто:</td>
@@ -292,7 +288,7 @@
                 </tr>
                 <tr>
                   <td class="td-text" rowspan="2">Коментарій:</td>
-                  <td class="padding-table"><textarea placeholder="Введіть текст повідомлення" class="table-textarea" required></textarea></td>
+                  <td class="padding-table"><textarea placeholder="Введіть текст повідомлення" name="textArea" class="table-textarea" required></textarea></td>
                 </tr>
               <tr>
                 <td>
@@ -316,9 +312,9 @@
                 <td class="td-table-fifth">Телефон</td>
               </tr>
               <tr>
-                <td><label><input type="text" class="input-fifth"></label></td>
-                <td><label><input type="email" class="input-fifth"></label></td>
-                <td><label><input type="tel" class="input-fifth"></label></td>
+                <td class="class-table-input"><label><input type="text" name="userName" class="input-fifth"></label></td>
+                <td class="class-table-input"><label><input type="email" name="userEmail" class="input-fifth"></label></td>
+                <td class="class-table-input"><label><input type="tel" name="userTel" class="input-fifth"></label></td>
               </tr>
             </tbody>
           </table>
@@ -337,7 +333,7 @@
                     </select>
                   </label>
                 </td>
-                <td colspan="2"><input type="text" class="input-fifth"></td>
+                <td colspan="2" class="class-table-input"><input type="text" name="addres" class="input-fifth"></td>
               </tr>
             </tbody>
           </table>
@@ -349,9 +345,9 @@
                 <td class="td-table-fifth">Поштовий індекс</td>
               </tr>
               <tr>
-                <td><input type="text" class="input-fifth"></td>
-                <td><input type="text" class="input-fifth"></td>
-                <td><input type="text" class="input-fifth"></td>
+                <td class="class-table-input"><input type="text" name="tower" class="input-fifth"></td>
+                <td class="class-table-input"><input type="text" name="house" class="input-fifth"></td>
+                <td class="class-table-input"><input type="text" name="poshta" class="input-fifth"></td>
               </tr>
             </tbody>
           </table>
@@ -361,7 +357,7 @@
                 <td>
                   <label class="label-table">
                     <span class="parentv">
-                      <input type="checkbox">
+                      <input type="checkbox" name="tick">
                       <span></span>
                     </span>
                     Я погоджуюсь з правилами оплати та доставки товару
@@ -374,7 +370,7 @@
           <table>
             <tbody>
               <tr>
-                <td><input type="reset" class="reset" placeholder="Повернутися назад"></td>
+                <td><input type="reset" class="reset" value="Повернутися назад"></td>
                 <td><input type="submit" value="Оформити покупку" class="submit-fifth"></td>
               </tr>
         </form>
