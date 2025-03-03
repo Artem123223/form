@@ -43,63 +43,65 @@
           </label>
         </form>
       </div>
-      <div class="sixthcolon">
-        <p>06. фіксована форма</p>
-        <a href="#" class="open-popup">Open popup</a>
-        <div class="popup">
-          <p>
-            <a href="#" class="cancel">
-              <svg
-                version="1.2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 10 10"
-                width="10"
-                height="10"
-              >
-                <style>
-                  .a {
-                    fill: #b3b3b3;
-                  }
-                </style>
-                <path
-                  fill-rule="evenodd"
-                  class="a"
-                  d="m9.9 8.5l-1.4 1.4-3.5-3.5-3.5 3.5-1.4-1.4 3.5-3.5-3.5-3.5 1.4-1.4 3.5 3.5 3.5-3.5 1.4 1.4-3.5 3.5z"
-                />
-              </svg>
-            </a>
-          </p>
-          <form method="post" class="formlast">
+      <div class="fix">
+        <div class="sixthcolon">
+          <p>06. фіксована форма</p>
+          <a href="#" class="open-popup">Вернути</a>
+          <div class="popup">
             <p>
-              Логін
-              <label>
-                <input type="text" />
-              </label>
+              <a href="#" class="cancel">
+                <svg
+                  version="1.2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 10 10"
+                  width="10"
+                  height="10"
+                >
+                  <style>
+                    .a {
+                      fill: #b3b3b3;
+                    }
+                  </style>
+                  <path
+                    fill-rule="evenodd"
+                    class="a"
+                    d="m9.9 8.5l-1.4 1.4-3.5-3.5-3.5 3.5-1.4-1.4 3.5-3.5-3.5-3.5 1.4-1.4 3.5 3.5 3.5-3.5 1.4 1.4-3.5 3.5z"
+                  />
+                </svg>
+              </a>
             </p>
-            <p>
-              Пароль
-              <label>
-                <input type="password" />
-              </label>
-            </p>
-            <p>
-              <a href="#">Забули пароль?</a>
-            </p>
-            <p>
-              <label>
-                <span class="parent">
-                  <input type="checkbox" />
-                  <span></span>
-                </span>
-                Запам’ятати пароль
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="submit" value="Увійти" />
-              </label>
-            </p>
-          </form>
+            <form method="post" class="formlast">
+              <p>
+                Логін
+                <label>
+                  <input type="text" />
+                </label>
+              </p>
+              <p>
+                Пароль
+                <label>
+                  <input type="password" />
+                </label>
+              </p>
+              <p>
+                <a href="#">Забули пароль?</a>
+              </p>
+              <p>
+                <label>
+                  <span class="parent">
+                    <input type="checkbox" />
+                    <span></span>
+                  </span>
+                  Запам’ятати пароль
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="submit" value="Увійти" />
+                </label>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -211,34 +213,34 @@
               </label>
             </p>
           </div>
-          <div class="rowgap-third">
-            <div class="checkbox">
-              <label class="flex">
+          <div class="checkboxs">
+            <p>
+              <label class="style1">
                 <span class="parenta">
-                  <input type="checkbox" name="tick" required>
+                  <input type="checkbox">
                   <span></span>
                 </span>
                 Отримувати новини
               </label>
-            </div>
-            <div class="checkbox">
-              <label class="flex">
+            </p>
+            <p>
+              <label class="style1">
                 <span class="parenta">
-                  <input type="checkbox" name="tick" required>
+                  <input type="checkbox">
                   <span></span>
                 </span>
                 Купити додому ковбаси
               </label>
-            </div>
-            <div class="checkbox">
-              <label class="flex">
+            </p>
+            <p>
+              <label class="style1">
                 <span class="parenta">
-                  <input type="checkbox" name="tick" required>
+                  <input type="checkbox">
                   <span></span>
                 </span>
                 Включити світло
               </label>
-            </div>
+            </p>
           </div>
         </form>
       </div>
@@ -303,7 +305,7 @@
       <div class="fifth-colon">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
-        <form action="php/fifth.php" method="post">
+        <form action="php/fifth.php" method="post" class="fifthform">
           <table>
             <tbody>
               <tr>
@@ -312,9 +314,9 @@
                 <td class="td-table-fifth">Телефон</td>
               </tr>
               <tr>
-                <td class="class-table-input"><label><input type="text" name="userName" class="input-fifth"></label></td>
-                <td class="class-table-input"><label><input type="email" name="userEmail" class="input-fifth"></label></td>
-                <td class="class-table-input"><label><input type="tel" name="userTel" class="input-fifth"></label></td>
+                <td class="class-table-input padding-table"><label><input type="text" name="userName" class="input-fifth"></label></td>
+                <td class="class-table-input padding-table"><label><input type="email" name="userEmail" class="input-fifth"></label></td>
+                <td class="class-table-input padding-table"><label><input type="tel" name="userTel" class="input-fifth"></label></td>
               </tr>
             </tbody>
           </table>
@@ -326,14 +328,14 @@
                 <td class="td-table-fifth">Адреса</td>
               </tr>
               <tr>
-                <td>
+                <td class="padding-table">
                   <label class="arrow select-label">
                     <select name="select" class="table-select" required>
                       <option value="Indonesia">Індонезія</option>
                     </select>
                   </label>
                 </td>
-                <td colspan="2" class="class-table-input"><input type="text" name="addres" class="input-fifth"></td>
+                <td colspan="2" class="class-table-input padding-table addres"><input type="text" name="addres" class="input-fifth"></td>
               </tr>
             </tbody>
           </table>
@@ -345,9 +347,9 @@
                 <td class="td-table-fifth">Поштовий індекс</td>
               </tr>
               <tr>
-                <td class="class-table-input"><input type="text" name="tower" class="input-fifth"></td>
-                <td class="class-table-input"><input type="text" name="house" class="input-fifth"></td>
-                <td class="class-table-input"><input type="text" name="poshta" class="input-fifth"></td>
+                <td class="class-table-input padding-table"><input type="text" name="tower" class="input-fifth"></td>
+                <td class="class-table-input padding-table"><input type="text" name="house" class="input-fifth"></td>
+                <td class="class-table-input padding-table"><input type="text" name="poshta" class="input-fifth"></td>
               </tr>
             </tbody>
           </table>
@@ -356,7 +358,7 @@
               <tr>
                 <td>
                   <label class="label-table">
-                    <span class="parentv">
+                    <span class="parentv padding-table">
                       <input type="checkbox" name="tick">
                       <span></span>
                     </span>
@@ -366,13 +368,15 @@
               </tr>
             </tbody>
           </table>
-          <hr class="hr-tablez">
+          <hr class="hr-table">
           <table>
             <tbody>
               <tr>
-                <td><input type="reset" class="reset" value="Повернутися назад"></td>
+                <td class="super-padding"><input type="reset" class="reset" value="Повернутися назад"></td>
                 <td><input type="submit" value="Оформити покупку" class="submit-fifth"></td>
               </tr>
+            </tbody>
+          </table>
         </form>
       </div>
     </div>
