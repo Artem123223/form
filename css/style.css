@@ -564,7 +564,7 @@ hr:first-child {
 .antistyle-status {
   display: flex;
   align-items: center;
-  column-gap: 37px;
+  column-gap: 35px;
   padding: 0 0 21px 22px;
 }
 
@@ -840,6 +840,7 @@ input[type="date"] {
   font-family: "Roboto";
   border: none;
   padding: 17px 118px;
+  transition: .5s ease;
 }
 
 .submit-form:hover {
@@ -851,6 +852,7 @@ input[type="date"] {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   color: #fff;
   background-color: #07be51;
+  transition: .1s ease;
 }
 
 .fifth-colon > h2 {
@@ -959,6 +961,7 @@ input[type="date"] {
   font-family: "Roboto";
   border: none;
   padding: 16px 26px 13px 27px;
+  transition: .5s ease;
 }
 
 .submit-fifth:hover {
@@ -970,6 +973,7 @@ input[type="date"] {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   background-color: #07be51;
   color: #fff;
+  transition: .1vs ease;
 }
 
 .super-padding {
