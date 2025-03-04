@@ -83,6 +83,10 @@ select:hover {
   cursor: pointer;
 }
 
+.cursor:hover {
+  cursor: pointer;
+}
+
 .header {
   padding-bottom: 45px;
   position: relative;
@@ -127,6 +131,31 @@ h1 {
   z-index: -1;
 }
 
+.arrows {
+  position: relative;
+}
+
+.arrows:before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  top: 50%;
+  right: 14px;
+  border-top-color: #1f222c;
+  z-index: -1;
+}
+
+.arrows:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background: #ccc;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+}
+
 .formfirst > p > label > select {
   background-color: transparent;
 }
@@ -148,10 +177,13 @@ h1 {
   padding-bottom: 28px;
 }
 
-.first-colon > form > p > label > input,
-.first-colon > form > p > label > select {
-  padding: 15px 0 15px 15px;
+.first-colon > form > p > label > input {
+  padding: 11px 0 11px 15px;
   appearance: none;
+}
+
+.first-colon > form > p > label > select {
+  padding: 12px 0 12px 15px;
 }
 
 .formfirst select {
@@ -169,8 +201,11 @@ h1 {
   appearance: none;
 }
 
-.first-colon > form > p > label > input:focus,
-.sixthcolon > div > form > p > label > input:focus {
+.first-colon > form > p > label > input:hover,
+.sixthcolon > div > form > p > label > input:hover,
+.arrow > select:hover,
+.textareahover:hover,
+.input-fifth:hover {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
   border: 1px solid #3e6aff;
   appearance: none;
@@ -180,13 +215,13 @@ h1 {
   padding: 16px 0 16px 16px;
   border-radius: 3px;
   border: 1px solid #cccccc;
-  min-height: 130px;
+  min-height: 97px;
   max-height: 200px;
   resize: vertical;
 }
 
 .formfirst > label > input[type="submit"] {
-  padding: 18px 0 13px 0;
+  padding: 13.5px 0 13.5px 0;
   border-radius: 3px;
   background-color: #12d661;
   font-size: 14px;
@@ -195,7 +230,7 @@ h1 {
   font-family: "Roboto";
   text-align: center;
   border: none;
-  transition: 0.3"s ease;
+  transition: 0.3s ease;
 }
 
 .formfirst > label > input[type="submit"]:hover {
@@ -203,10 +238,16 @@ h1 {
   background-color: #07be51;
 }
 
-.sixthcolon {
-  position: absolute;
+.fix {
+  position: fixed;
   top: 176px;
   right: 0px;
+  width: 310px;
+}
+
+.sixthcolon {
+  position: absolute;
+  right: 337px;
   width: 310px;
 }
 
@@ -305,6 +346,12 @@ h1 {
   padding-bottom: 14px;
 }
 
+.flex-gap {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -373,8 +420,8 @@ h1 {
 }
 
 .parentv > input:checked + span {
-  top: 12%;
-  left: 30%;
+  top: 27%;
+  left: 50%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #244dd7;
@@ -386,6 +433,10 @@ h1 {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  font-size: 14px;
+  color: #1f222c;
+  font-weight: 400;
+  font-family: "Roboto";
 }
 
 .formlast > p > label > input[type="submit"] {
@@ -396,7 +447,7 @@ h1 {
   color: #ffffff;
   font-weight: 700;
   font-family: "Roboto";
-  padding: 16px 0;
+  padding: 13.5px 0;
   transition: 0.3s ease;
 }
 
@@ -407,19 +458,20 @@ h1 {
 .formlast input[type="submit"]:hover {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
   background-color: #07be51;
+  border: none;
 }
 
-hr:first-child {
+.hr {
   border: none;
   border-top: 1px solid #dcdcde;
 }
 
-.secondhr {
-  margin: 50px 0;
-}
-
 .main {
   padding-top: 50px;
+}
+
+.secondform {
+  padding-bottom: 50px;
 }
 
 .secondform > h2 {
@@ -434,6 +486,18 @@ hr:first-child {
 .secondform > form {
   display: flex;
   column-gap: 62px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
 }
 
 .radio > p:first-child > label > input,
@@ -482,8 +546,8 @@ hr:first-child {
 }
 
 .parentx > input:checked + span {
-  top: 20%;
-  left: 41%;
+  top: 30%;
+  left: 50%;
   width: 5px;
   height: 7px;
   border-top: 2px solid #244dd7;
@@ -562,6 +626,10 @@ input[type="date"] {
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
+}
+
+.thirdcolon {
+  padding: 50px 0;
 }
 
 .human {
@@ -677,6 +745,10 @@ input[type="date"] {
   width: 500px;
 }
 
+.fourthcolon {
+  padding: 50px 0;
+}
+
 .fourthcolon > h2 {
   font-size: 20px;
   letter-spacing: 0px;
@@ -716,12 +788,12 @@ input[type="date"] {
   color: #b3b3b3;
   font-weight: 400;
   font-family: "Roboto";
-  padding: 15px 0 13px 15px;
+  padding: 11.5px 0 11.5px 15px;
   width: 324px;
 }
 
-.table-input:focus,
-.table-select:focus {
+.table-input:hover,
+.table-select:hover {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
   border: 1px solid #3e6aff;
   appearance: none;
@@ -743,7 +815,7 @@ input[type="date"] {
   background-color: transparent;
   outline: 1px solid #ccc; 
   border-radius: 3px;
-  padding: 15px 0 13px 15px;
+  padding: 11.5px 0 11.5px 15px;
   width: 341px;
 }
 
@@ -777,7 +849,7 @@ input[type="date"] {
   font-weight: 700;
   font-family: "Roboto";
   border: none;
-  padding: 16px 37px 12px 37px;
+  padding: 12.5px 37px 12.5px 37px;
   transition: .5s ease;
 }
 
@@ -796,14 +868,18 @@ input[type="date"] {
   color: #b3b3b3;
   font-weight: 400;
   font-family: "Roboto";
-  min-height: 130px;
+  min-height: 101px;
   max-height: 200px;
   resize: vertical;
 }
 
-.table-textarea:focus {
+.table-textarea:hover {
   box-shadow: 0px 2px 2.5px 2.5px rgba(15,40,126,0.35);
   border-color: #2857f4;
+}
+
+.padding-submit {
+  padding-left: 80px;
 }
 
 .submit-form {
@@ -814,13 +890,18 @@ input[type="date"] {
   font-weight: 700;
   font-family: "Roboto";
   border: none;
-  padding: 17px 118px;
+  padding: 13.5px 114px;
   transition: .5s ease;
 }
 
 .submit-form:hover {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   background-color: #07be51;
+}
+
+.fifth-colon {
+  padding-top: 50px;
+  padding-bottom: 144px;
 }
 
 .fifth-colon > h2 {
@@ -861,11 +942,18 @@ input[type="date"] {
   margin: 24px 0 30px 0;
 }
 
+.padding-tables {
+  padding-left: 81px;
+}
+
 .padding-table {
   padding-right: 9px;
 }
 
 .label-table {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
   font-size: 14px;
   color: #1f222c;
   font-weight: 400;
@@ -887,7 +975,7 @@ input[type="date"] {
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  padding: 17px 12px 17px;
+  padding: 12.5px 12px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -908,7 +996,7 @@ input[type="date"] {
   color: #6e6f77;
   font-weight: 700;
   font-family: "Roboto";
-  padding: 16px 25px 13px 26px;
+  padding: 13.5px 27px;
   transition: .5s ease;
 }
 
@@ -928,7 +1016,7 @@ input[type="date"] {
   font-weight: 700;
   font-family: "Roboto";
   border: none;
-  padding: 16px 26px 13px 27px;
+  padding: 13.5px 27px;
   transition: .5s ease;
 }
 

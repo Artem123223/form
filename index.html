@@ -35,7 +35,7 @@
           </p>
           <p>
             <label>
-              <textarea name="emailtextarea" id="" placeholder="Email" required></textarea>
+              <textarea name="emailtextarea" id="" placeholder="Email" class="textareahover" required></textarea>
             </label>
           </p>
           <label>
@@ -87,7 +87,7 @@
                 <a href="#">Забули пароль?</a>
               </p>
               <p>
-                <label>
+                <label class="cursor">
                   <span class="parent">
                     <input type="checkbox" />
                     <span></span>
@@ -105,7 +105,7 @@
         </div>
       </div>
     </div>
-    <hr class="wrapper" />
+    <hr class="wrapper hr">
     <div class="wrapper main">
       <div class="secondform">
         <h2>02. елементи</h2>
@@ -113,19 +113,19 @@
           <form action="php/secondform.php" method="post" class="flex-second">
             <div class="radio">
               <p>
-                <label class="style-checkbox">
+                <label class="style-checkbox cursor flex-gap">
                   <input type="radio" name="poshta" value="0" required>
                   Нова Пошта
                 </label>
               </p>
               <p>
-                <label class="style-checkbox">
+                <label class="style-checkbox cursor flex-gap">
                   <input type="radio" name="poshta" value="1" required>
                   Кур’єр
                 </label>
               </p>
               <p>
-                <label>
+                <label class="flex-gap">
                   <input type="radio" name="poshta" value="2" disabled>
                   Самовивіз
                 </label>
@@ -133,7 +133,7 @@
             </div>
             <div class="checkbox">
               <p>
-                <label class="style-checkbox">
+                <label class="style-checkbox cursor flex-gap">
                   <span class="parentx">
                     <input type="checkbox" name="agree" required>
                     <span></span>
@@ -142,7 +142,7 @@
                 </label>
               </p>
               <p>
-                <label class="style-checkbox">
+                <label class="style-checkbox cursor flex-gap">
                   <span class="parentx">
                     <input type="checkbox" name="agree" required>
                     <span></span>
@@ -151,7 +151,7 @@
                 </label>
               </p>
               <p>
-                <label>
+                <label class="flex-gap">
                   <span class="parentx">
                     <input type="checkbox" disabled>
                     <span></span>
@@ -163,21 +163,21 @@
             <div class="twosecond">
               <div class="flex-between style-status">
                 <p class="status">Статус</p>
-                <label class="flex-">
+                <label class="flex- cursor">
                   <span class="parentc">
                     <input type="checkbox" name="tick" required>
                     <span></span>
                   </span>
                   Новинки
                 </label>
-                <label class="flex-">
+                <label class="flex- cursor">
                   <span class="parentc">
                     <input type="checkbox" name="tick" required>
                     <span></span>
                   </span>
                   Акційні товари
                 </label>
-                <label class="flex-">
+                <label class="flex- cursor">
                   <span class="parentc">
                     <input type="checkbox" name="tick" required>
                     <span></span>
@@ -185,7 +185,7 @@
                   Розпродаж
                 </label>
               </div>
-              <div class="antistyle-status">
+              <div class="antistyle-status cursor">
                 <p class="status">Дата</p>
                 <label>
                   <input type="date" name="date">
@@ -195,7 +195,7 @@
           </form>
         </div>
       </div>
-      <hr class="wrapper secondhr" />
+      <hr class="wrapper hr">
       <div class="thirdcolon">
         <h2>03. стилізовані чекбокси</h2>
         <form action="php/third.php" method="post" class="thirdform">
@@ -244,41 +244,41 @@
           </div>
         </form>
       </div>
-      <hr class="wrapper secondhr">
+      <hr class="wrapper hr">
       <div class="fourthcolon">
         <h2>04. форма таблицею</h2>
         <p class="tableup-p">Заповніть усі необхідні поля</p>
         <form action="php/fourth.php" method="post" class="fourthform">
           <table>
             <tbody>
-              <tr>
-                <td class="td-text">ФІО:</td>
-                <td class="padding-table"><input type="text" name="username" placeholder="Введіть ім’я" class="table-input" required></td>
-              </tr>
-              <tr>
-                <td class="td-text">Пароль:</td>
-                <td class="padding-table"><input type="password" name="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
-              </tr>
-              <tr>
-                <td class="td-text">Місто:</td>
-                <td class="padding-table-big">
-                  <label class="arrow">
-                    <select name="select" class="table-select" required>
-                      <option value="Khmelnitskiy">Хмельницький</option>
-                      <option value="Kyiv">Київ</option>
-                      <option value="Lviv">Львів</option>
-                    </select>
-                  </label>
-                </td>
-              </tr>
+                <tr>
+                  <td class="td-text">ФІО:</td>
+                  <td class="padding-tables"><input type="text" name="username" placeholder="Введіть ім’я" class="table-input" required></td>
+                </tr>
+                <tr>
+                  <td class="td-text">Пароль:</td>
+                  <td class="padding-tables"><input type="password" name="password" placeholder="Введіть не менше 6 символів" maxlength="6" class="table-input" required></td>
+                </tr>
+                <tr>
+                  <td class="td-text">Місто:</td>
+                  <td class="padding-table-big padding-tables">
+                    <label class="arrow">
+                      <select name="select" class="table-select" required>
+                        <option value="Khmelnitskiy">Хмельницький</option>
+                        <option value="Kyiv">Київ</option>
+                        <option value="Lviv">Львів</option>
+                      </select>
+                    </label>
+                  </td>
+                </tr>
               <tr>
                 <td class="td-text">Стать:</td>
-                <td class="flexradiotd padding-table-big">
-                  <label class="radio-table -radio">
+                <td class="flexradiotd padding-table-big padding-tables">
+                  <label class="radio-table -radio cursor">
                     <input type="radio" name="floors" value="0" required>
                     Чоловік
                   </label>
-                  <label class="radio-table">
+                  <label class="radio-table cursor">
                     <input type="radio" name="floors" value="1" required>
                     Жінка
                   </label>
@@ -286,14 +286,14 @@
               </tr>
                 <tr>
                   <td class="td-text">Фото:</td>
-                  <td class="padding-table"><button type="file" class="file-input" required>Виберіть файл</button></td>
+                  <td class="padding-tables"><button type="file" class="file-input" required>Виберіть файл</button></td>
                 </tr>
                 <tr>
                   <td class="td-text" rowspan="2">Коментарій:</td>
-                  <td class="padding-table"><textarea placeholder="Введіть текст повідомлення" name="textArea" class="table-textarea" required></textarea></td>
+                  <td class="padding-tables"><textarea placeholder="Введіть текст повідомлення" name="textArea" class="table-textarea" required></textarea></td>
                 </tr>
               <tr>
-                <td>
+                <td class="padding-submit">
                   <input type="submit" value="Зареєструватися" class="submit-form">
                 </td>
               </tr>
@@ -301,7 +301,7 @@
           </table>
         </form>
       </div>
-      <hr class="wrapper secondhr">
+      <hr class="wrapper hr">
       <div class="fifth-colon">
         <h2>05. форма таблицею</h2>
         <p>Оформлення заявки</p>
@@ -329,7 +329,7 @@
               </tr>
               <tr>
                 <td class="padding-table">
-                  <label class="arrow select-label">
+                  <label class="arrows select-label">
                     <select name="select" class="table-select" required>
                       <option value="Indonesia">Індонезія</option>
                     </select>
@@ -357,8 +357,8 @@
             <tbody>
               <tr>
                 <td>
-                  <label class="label-table">
-                    <span class="parentv padding-table">
+                  <label class="label-table cursor">
+                    <span class="parentv">
                       <input type="checkbox" name="tick">
                       <span></span>
                     </span>
