@@ -245,14 +245,9 @@ h1 {
 .fix {
   position: fixed;
   top: 176px;
-  right: 0px;
+  left: 86%;
   width: 310px;
-}
-
-.sixthcolon {
-  position: absolute;
-  right: 337px;
-  width: 310px;
+  transform: translateX(-100%);
 }
 
 .sixthcolon > div {
