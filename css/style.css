@@ -378,6 +378,7 @@ h1 {
   height: 16px;
   border-radius: 3px;
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 .parent > input:checked,
@@ -385,6 +386,7 @@ h1 {
 .parentc > input:checked,
 .parentv > input:checked {
   outline: 1px solid #3e6aff;
+  border: none;
 }
 
 .parent > input:checked + span {
@@ -799,6 +801,10 @@ input[type="date"] {
 
 .padding-table-big {
   padding-bottom: 19px;
+}
+
+.padding-tablzzz {
+  padding-bottom: 14px;
 }
 
 .table-select {
