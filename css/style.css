@@ -68,6 +68,10 @@
   margin: 0 auto;
 }
 
+input[type=submit] {
+  cursor: pointer;
+}
+
 input,
 select,
 textarea {
@@ -201,11 +205,11 @@ h1 {
   appearance: none;
 }
 
-.first-colon > form > p > label > input:hover,
-.sixthcolon > div > form > p > label > input:hover,
-.arrow > select:hover,
-.textareahover:hover,
-.input-fifth:hover {
+.first-colon > form > p > label > input:focus,
+.sixthcolon > div > form > p > label > input:focus,
+.arrow > select:focus,
+.textareahover:focus,
+.input-fifth:focus {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
   border: 1px solid #3e6aff;
   appearance: none;
@@ -233,7 +237,7 @@ h1 {
   transition: 0.3s ease;
 }
 
-.formfirst > label > input[type="submit"]:hover {
+.formfirst > label > input[type="submit"]:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
   background-color: #07be51;
 }
@@ -379,7 +383,6 @@ h1 {
   height: 16px;
   border-radius: 3px;
   background-color: #fff;
-  border: 1px solid #ccc;
 }
 
 .parent > input:checked,
@@ -455,7 +458,7 @@ h1 {
   padding-bottom: 21px;
 }
 
-.formlast input[type="submit"]:hover {
+.formlast input[type="submit"]:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
   background-color: #07be51;
   border: none;
@@ -792,15 +795,11 @@ input[type="date"] {
   width: 324px;
 }
 
-.table-input:hover,
-.table-select:hover {
+.table-input:focus,
+.table-select:focus {
   box-shadow: 0 0 2.5px 2.5px rgba(62, 106, 255, 0.55);
   border: 1px solid #3e6aff;
   appearance: none;
-}
-
-.padding-table {
-  padding-bottom: 14px;
 }
 
 .padding-table-big {
@@ -853,7 +852,7 @@ input[type="date"] {
   transition: .5s ease;
 }
 
-.file-input:hover {
+.file-input:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(15,40,126,0.35);
   background-color: #2857f4;
 }
@@ -873,7 +872,7 @@ input[type="date"] {
   resize: vertical;
 }
 
-.table-textarea:hover {
+.table-textarea:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(15,40,126,0.35);
   border-color: #2857f4;
 }
@@ -894,7 +893,7 @@ input[type="date"] {
   transition: .5s ease;
 }
 
-.submit-form:hover {
+.submit-form:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   background-color: #07be51;
 }
@@ -1005,7 +1004,7 @@ input[type="date"] {
   transition: .5s ease;
 }
 
-.reset:hover {
+.reset:focus {
   background-color: #85868d;
   font-size: 14px;
   color: #fff;
@@ -1025,7 +1024,7 @@ input[type="date"] {
   transition: .5s ease;
 }
 
-.submit-fifth:hover {
+.submit-fifth:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   background-color: #07be51;
 }
