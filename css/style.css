@@ -237,6 +237,14 @@ h1 {
   transition: 0.3s ease;
 }
 
+.formfirst > label > input[type="submit"]:hover,
+.formlast > p > label > input[type="submit"]:hover,
+.submit-form:hover {
+  background-color: #fff;
+  color: #12d661;
+  border: 1px solid #12d661;
+}
+
 .formfirst > label > input[type="submit"]:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
   background-color: #07be51;
@@ -332,7 +340,8 @@ h1 {
   border-radius: 3px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
-  padding: 10px 0;
+  padding: 10px 15px;
+  width: 230px;
 }
 
 .formlast > p:nth-child(4) > label {
@@ -452,14 +461,14 @@ h1 {
   transition: 0.3s ease;
 }
 
-.formlast > p:last-child {
-  padding-bottom: 21px;
-}
-
 .formlast input[type="submit"]:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
   background-color: #07be51;
   border: none;
+}
+
+.formlast > p:last-child {
+  padding-bottom: 21px;
 }
 
 .hr {
@@ -772,6 +781,17 @@ input[type="date"] {
   display: flex;
   align-items: center;
   column-gap: 15px;
+  font-size: 16px;
+  color: #1f222c;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.gavgav {
+  font-size: 14px;
+  color: #1f222c;
+  font-weight: 400;
+  font-family: "Roboto";
 }
 
 .thirdform {
@@ -893,6 +913,12 @@ input[type="date"] {
   transition: .5s ease;
 }
 
+.file-input:hover {
+  background-color: #fff;
+  color: #3e6aff;
+  border: 1px solid #3e6aff;
+}
+
 .file-input:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(15,40,126,0.35);
   background-color: #2857f4;
@@ -963,7 +989,7 @@ input[type="date"] {
 }
 
 .fifthform {
-  max-width: 680px;
+  max-width: 695px;
 }
 
 .fifthform select {
@@ -1031,6 +1057,7 @@ input[type="date"] {
 
 .table-padding {
   padding-bottom: 18px;
+  width: 100%;
 }
 
 .reset {
@@ -1047,6 +1074,8 @@ input[type="date"] {
 
 .reset:hover {
   cursor: pointer;
+  background-color: #85868d;
+  color: #fff;
 }
 
 .reset:focus {
@@ -1075,5 +1104,5 @@ input[type="date"] {
 }
 
 .super-padding {
-  padding-right: 318px;
+  padding-right: 327px;
 }
