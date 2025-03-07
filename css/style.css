@@ -664,58 +664,97 @@ input[type="date"] {
   z-index: 1;
 }
 
+.firstradiofloor:hover,
+.secondradiofloor:hover {
+  cursor: pointer;
+}
+
 .style1 {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
 
-.checkboxs {
+.rowgap-third {
   display: flex;
   flex-direction: column;
   row-gap: 19px;
+  column-gap: 10px  ;
+}
+
+.checkbox > p:last-child > label > span > input {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+}
+
+.checkbox > p:last-child > label {
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+.checkbox > p:last-child > label > span > input {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: 1px solid #e5e5e5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .parenta {
   position: relative;
   display: inline-block;
-}
-
-.parenta,
-.parenta > input {
   width: 45px;
   height: 25px;
 }
 
-.parenta span,
-.parenta > input {
-  transition: all .5s ease;
-  cursor: pointer;
-}
-
-.parenta > input {
+.parenta input {
+  appearance: none;
+  width: 100%;
+  height: 100%;
   border-radius: 12px;
   background-color: #cfcfd1;
-}
-
-.parenta span {
   position: absolute;
-  top: 48.7%;
-  left: 25%;
-  width: 21px;
-  height: 21px;
-  background-color: #fff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: all .5s ease;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .parenta input:checked {
   background-color: #3e6aff;
 }
 
+.parenta span {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
 .parenta input:checked + span {
-  left: 72%;
+  left: 48%;
+}
+
+.checkbox > p:last-child > label {
+  font-size: 14px;
+  color: #b3b3b3;
+  font-weight: 400;
+  font-family: "Roboto";
 }
 
 .thirdcolon > h2 {
@@ -1003,6 +1042,10 @@ input[type="date"] {
   font-family: "Roboto";
   padding: 13.5px 27px;
   transition: .5s ease;
+}
+
+.reset:hover {
+  cursor: pointer;
 }
 
 .reset:focus {
