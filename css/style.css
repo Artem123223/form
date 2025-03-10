@@ -1098,6 +1098,12 @@ input[type="date"] {
   transition: .5s ease;
 }
 
+.submit-fifth:hover {
+  color: #12d661;
+  background-color: #fff;
+  border: 1px solid #12d661;
+}
+
 .submit-fifth:focus {
   box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
   background-color: #07be51;
