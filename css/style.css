@@ -240,9 +240,8 @@ h1 {
 .formfirst > label > input[type="submit"]:hover,
 .formlast > p > label > input[type="submit"]:hover,
 .submit-form:hover {
-  background-color: #fff;
-  color: #12d661;
-  border: 1px solid #12d661;
+  box-shadow: 0px 2px 2.5px 2.5px rgba(8, 118, 52, 0.35);
+  background-color: #07be51;
 }
 
 .formfirst > label > input[type="submit"]:focus {
@@ -395,8 +394,7 @@ h1 {
 .parentx > input:checked,
 .parentc > input:checked,
 .parentv > input:checked {
-  outline: 1px solid #3e6aff;
-  border: none;
+  border: 1px solid #3e6aff;
 }
 
 .parent > input:checked + span {
@@ -549,10 +547,6 @@ h1 {
 
 .parentx span {
   position: absolute;
-}
-
-.parentx > input:checked {
-  outline: 1px solid #3e6aff;
 }
 
 .parentx > input:checked + span {
@@ -778,11 +772,21 @@ input[type="date"] {
 }
 
 .flex_ {
+  font-size: 16px;
+  color: #1f222c;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+
+.glex {
   display: flex;
   align-items: center;
   column-gap: 15px;
+}
+
+.human > p > input:checked ~ label {
   font-size: 16px;
-  color: #1f222c;
+  color: #3e6aff;
   font-weight: 700;
   font-family: "Roboto";
 }
@@ -914,9 +918,8 @@ input[type="date"] {
 }
 
 .file-input:hover {
-  background-color: #fff;
-  color: #3e6aff;
-  border: 1px solid #3e6aff;
+  box-shadow: 0px 2px 2.5px 2.5px rgba(15,40,126,0.35);
+  background-color: #2857f4;
 }
 
 .file-input:focus {
@@ -958,6 +961,11 @@ input[type="date"] {
   border: none;
   padding: 13.5px 114px;
   transition: .5s ease;
+}
+
+.submit-fifth:hover {
+  box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
+  background-color: #07be51;
 }
 
 .submit-form:focus {
@@ -1099,9 +1107,8 @@ input[type="date"] {
 }
 
 .submit-fifth:hover {
-  color: #12d661;
-  background-color: #fff;
-  border: 1px solid #12d661;
+  box-shadow: 0px 2px 2.5px 2.5px rgba(8,118,52,0.35);
+  background-color: #07be51;
 }
 
 .submit-fifth:focus {
